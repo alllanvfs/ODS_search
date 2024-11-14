@@ -17,14 +17,12 @@ O objetivo principal deste projeto é conectar pessoas e organizações com caus
 
 ## Estrutura do projeto
 A estrutura do projeto é organizada de forma modular, utilizando as melhores práticas de desenvolvimento web. O código está dividido em várias camadas que facilitam a manutenção e escalabilidade da aplicação.
-/buscador-ongs
-│
-├── /fig/                  # imagens, ícones, etc
-│
-├── /src/
-│   ├── /index/            # parte html do codigo - estrutura do codigo
-│   ├── /styles/           # parte do css - estilização do codigo
-│   └── /javascript/       # parte javascript - interatividade
-│
-├── /docs/                 # Documentação adicional, como diagramas e especificações
-├── README.md              # Este arquivo com a descrição do projeto
+
+- **/fig/**: Contém imagens, ícones e outros arquivos de mídia utilizados na interface do usuário.
+- **/src/**: Contém o código fonte da aplicação:
+  - **/index/**: Contém a parte HTML, responsável pela estrutura da aplicação.
+  - **/styles/**: Contém os arquivos CSS que definem a estilização e o layout do projeto.
+  - **/javascript/**: Contém os arquivos JavaScript responsáveis pela interatividade da aplicação.
+- **/docs/**: Contém a documentação adicional, como diagramas e especificações técnicas do projeto.
+- **README.md**: Este arquivo, que descreve o projeto, suas funcionalidades e a estrutura do código.
+
