@@ -24,5 +24,5 @@ A estrutura do projeto é organizada de forma modular, utilizando as melhores pr
   - **/styles/**: Contém os arquivos CSS que definem a estilização e o layout do projeto.
   - **/javascript/**: Contém os arquivos JavaScript responsáveis pela interatividade da aplicação.
 - **/docs/**: Contém a documentação adicional, como diagramas e especificações técnicas do projeto.
-- **README.md**: Este arquivo, que descreve o projeto, suas funcionalidades e a estrutura do código.
+  - **README.md**: Este arquivo, que descreve o projeto, suas funcionalidades e a estrutura do código.
 
