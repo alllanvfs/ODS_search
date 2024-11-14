@@ -1,5 +1,5 @@
 # ODS_search
-Projeto de frontend, sera um buscador de ONG's para Cornelio e região
+Projeto de frontend, sera um buscador de ONG's para Cornelio e região.
 
 ## Integrantes do Grupo 🧠
 | Nome               | RA                            | GitHub                       |
@@ -8,10 +8,10 @@ Projeto de frontend, sera um buscador de ONG's para Cornelio e região
 | Fabio        | 00000000                    | [Fabio](0000000) |
 
 ## ODS selecionado
-nosso projeto não escolheu nenhuma ODS em especifico, pois terá a função de ser um buscador de ODS, 
+Nosso projeto não escolheu nenhuma ODS em especifico, pois terá a função de ser um buscador de ODS.
 
 ## Descrição do Projeto
-é uma plataforma web que permite aos usuários encontrar organizações não-governamentais (ONGs) com base em temas específicos de interesse. Através de um simples campo de busca, o usuário pode digitar palavras-chave, como "cachorro", "meio ambiente", "educação" ou "saúde", e o sistema irá filtrar as ONGs que estão diretamente relacionadas a esses temas, de acordo com os Objetivos de Desenvolvimento Sustentável (ODS) que elas atendem.
+É uma plataforma web que permite aos usuários encontrar organizações não-governamentais (ONGs) com base em temas específicos de interesse. Através de um simples campo de busca, o usuário pode digitar palavras-chave, como "cachorro", "meio ambiente", "educação" ou "saúde", e o sistema irá filtrar as ONGs que estão diretamente relacionadas a esses temas, de acordo com os Objetivos de Desenvolvimento Sustentável (ODS) que elas atendem.
 
 O objetivo principal deste projeto é conectar pessoas e organizações com causas que mais importam para elas, promovendo o apoio a ONGs que trabalham de forma alinhada aos ODS da ONU. A plataforma busca facilitar a descoberta de ONGs e ajudar na criação de parcerias para iniciativas de impacto social.
 
