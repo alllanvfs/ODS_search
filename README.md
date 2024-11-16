@@ -5,7 +5,7 @@ Projeto de frontend, sera um buscador de ONG's para Cornelio e região.
 | Nome               | RA                            | GitHub                       |
 |--------------------|---------------------------------|------------------------------|
 | Allan Vinicios Ferraz Santos  | 2465272                    | [alllanvfs](https://github.com/alllanvfs) |
-| Fabio        | 00000000                    | [Fabio](0000000) |
+| Fabio Eizo Rodriguez Matsumoto  | 2475413                    | [devFabioMats](https://github.com/devFabioMats) |
 
 ## ODS selecionado
 Nosso projeto não escolheu nenhuma ODS em especifico, pois terá a função de ser um buscador de ODS.
