@@ -26,26 +26,32 @@ body {
 }
 
 header {
-
     display: flex;
-
     margin: 0;
-    background-color: white;
-    padding: 0;
+    background-image: linear-gradient(to right, #065a6f75, #076f347d);
+    padding: 1rem;
     width: 100%;
     margin-bottom: 50px;
+}
 
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 87%;
 }
 
 header>img {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
+    border: 1px solid #222831;
+    margin-left: 1rem;
 }
 
 /* Estiliza os títulos h1 */
-h1 {
-    font-size: 2.5rem;
+.titulo > h1 {
+    font-size: 5rem;
     /* Tamanho da fonte */
     font-weight: bold;
     color: #222831;
@@ -54,6 +60,17 @@ h1 {
     /* Alinha o texto ao centro */
     letter-spacing: 0.4rem;
     /* Espaçamento entre letras */
+    margin: 0;
+}
+
+.titulo > p {
+    font-size: 1.5rem;
+    /* Tamanho da fonte */
+    color: #222831;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin: 0;
 }
 
 /* Estiliza as seções da página */
