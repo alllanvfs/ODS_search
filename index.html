@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ODS Search</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>ODS Search</h1>
+        <p>O seu buscador de ONG's do norte pioneiro!</p>
+    </header>
+
+    <main>
+        <section>
+            <input type="text" name="Estados" placeholder="Digite o nome da maravilha" id="maravilhaInput" oninput="filtrarMaravilha()">
+            
+        </section>
+
+        <section class="blocos">
+
+            <div class="row">
+
+                <div class="bloco maravilha">
+                    <img src="img/chichen_itza.jpeg" alt="Chichen Itza">
+                    <h2>Chichen Itza</h2>
+                    <p class="descricao-meta">Chichen Itza é uma antiga cidade maia localizada no estado de Yucatán, no México. Conhecida por sua impressionante Pirâmide de Kukulcán, a cidade foi um importante centro religioso e político na época pré-colombiana.</p>
+                    <button><a href="https://www.google.com/maps/place/Chichen+Itza/@20.682157,-88.568394,17z/data=!3m1!1e3!4m5!3m4!1s0x8f5c37903b40965d:0x8f5c37903b40965d!8m2!3d20.682157!4d-88.568394" target="_blank">Localização</a></button>
+                </div>
+                
+                <div class="bloco maravilha">
+                    <img src="img/coliseu.jpeg" alt="Coliseu">
+                    <h2>Coliseu</h2>
+                    <p class="descricao-meta">O Coliseu, também conhecido como Anfiteatro Flaviano, é um anfiteatro oval localizado no centro da cidade de Roma, na Itália. Construído no século I d.C., era utilizado para gladiadores e outros espetáculos públicos.</p>
+                    <button><a href="https://www.google.com/maps/place/Colosseum/@41.890275,12.492269,17z/data=!3m1!1e3!4m5!3m4!1s0x3174a4e594cfe62d:0x10ae458c9b07704e!8m2!3d41.890275!4d12.492269" target="_blank">Localização</a></button>
+                </div>
+
+                <div class="bloco maravilha">
+                    <img src="img/cristo_redentor.jpeg" alt="cristo redentor">
+                    <h2>Cristo Redentor</h2>
+                    <p class="descricao-meta">O Cristo Redentor é uma colossal estátua art déco de Jesus Cristo, localizada no topo do Morro do Corcovado, no Rio de Janeiro, Brasil. Reconhecida mundialmente como um ícone cultural e religioso, a estátua foi inaugurada em 1931 e oferece uma vista panorâmica da cidade.</p>
+                    <button><a href="https://www.google.com.br/maps/place/Cristo+Redentor/@-22.951917,-43.2104824,17z/data=!3m1!1e3!4m5!3m4!1s0x9d5f575927c2fcd:0xb82f4d0c606422ed!8m2!3d-22.951917!4d-43.2104824" target="_blank">Localização</a></button>
+                </div>
+
+                <div class="bloco maravilha">
+                    <img src="img/grande_muralha_da_china.jpeg" alt="muralha da china">
+                    <h2>Grande Muralha da China</h2>
+                    <p class="descricao-meta">A Grande Muralha da China é uma série de fortificações construídas ao longo de várias dinastias na China antiga. É a maior estrutura construída pelo homem e uma das mais populares atrações turísticas do mundo. A muralha se estende por milhares de quilômetros, atravessando montanhas, desertos e planícies.</p>
+                    <button><a href="https://www.google.com.br/maps/place/Great+Wall+of+China/@40.433611,116.570417,17z/data=!3m1!1e3!4m5!3m4!1s0x3469b1d9ebd02349:0x8037b9a93db07661!8m2!3d40.433611!4d116.570417" target="_blank">Localização</a></button>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="bloco maravilha">
+                    <img src="img/machu_picchu.jpeg" alt="Machu Picchu">
+                    <h2>Machu Picchu</h2>
+                    <p class="descricao-meta">Machu Picchu é uma antiga cidade inca localizada nas montanhas dos Andes peruanos. Construída no século XV, a cidade é um exemplo impressionante da arquitetura inca e um Patrimônio Mundial da UNESCO.</p>
+                    <button><a href="https://www.google.com/maps/place/Machu+Picchu/@-13.163100,-72.545400,17z/data=!3m1!1e3!4m5!3m4!1s0x910d5228d0b2fbd:0x3e0390338014359!8m2!3d-13.163100!4d-72.545400" target="_blank">Localização</a></button>
+                </div>
+                
+                <div class="bloco maravilha">
+                    <img src="img/ruinas_de_petra.jpeg" alt="Ruínas de Petra">
+                    <h2>Ruínas de Petra</h2>
+                    <p class="descricao-meta">Petra é uma antiga cidade nabateia esculpida em rochas de arenito na Jordânia. Conhecida como a "Cidade Rosa", Petra foi um importante centro comercial na Rota da Seda.</p>
+                    <button><a href="https://www.google.com/maps/place//@30.3279204,35.4425821,2026m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Localização</a></button>
+                </div>
+                
+                <div class="bloco maravilha">
+                    <img src="img/taj_mahal.jpeg" alt="Taj Mahal">
+                    <h2>Taj Mahal</h2>
+                    <p class="descricao-meta">O Taj Mahal é um majestoso mausoléu de mármore branco localizado em Agra, na Índia. Construído no século XVII pelo imperador Mughal Shah Jahan em memória de sua esposa, o Taj Mahal é considerado uma das joias da arquitetura muçulmana.</p>
+                    <button><a href="https://www.google.com/maps/place/Taj+Mahal/@27.175147,78.042128,17z/data=!3m1!1e3!4m5!3m4!1s0x396db959ecd4139b:0x37c3723e893e8742!8m2!3d27.175147!4d78.042128" target="_blank">Localização</a></button>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - ODS Search - Todos os direitos reservados</p>
+        <p>Entrem em contado pelo e-mail: allanvinicios@alunos.utfpr.edu.br</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
