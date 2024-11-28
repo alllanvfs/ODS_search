@@ -196,6 +196,7 @@ section button:hover {
     /* Cor do texto */
     margin: 0.5rem 0;
     /* Margem acima e abaixo */
+    text-align: justify;
 }
 
 /* Estiliza o rodapé da página */
