@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/home.css" />
+  <title>ODS Search</title>
+</head>
+
+<body>
+  <header>
+    <img src="../images/logo.png" alt="Logo da ODS Search" />
+    <div class="titulo">
+      <h1>ODS Search</h1>
+      <p>O seu buscador de ONG's do norte pioneiro!</p>
+    </div>
+  </header>
+
+  <button style="
+        background-color: #2ecc71;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+      " onmouseover="this.style.backgroundColor='#27ae60'; this.style.transform='translateY(-2px)';"
+    onmouseout="this.style.backgroundColor='#2ecc71'; this.style.transform='translateY(0)';"
+    onmousedown="this.style.backgroundColor='#229954';" onmouseup="this.style.backgroundColor='#27ae60';"
+    onclick="window.location.href='cadastro.html'">
+    Cadastro
+  </button>
+
+  <main>
+    <section>
+      <input type="text" name="Estados" placeholder="Digite o nome ou tema da ONG" id="OngInput"
+        oninput="filtrarOng()" />
+    </section>
+
+    <section class="blocos">
+      <div class="row">
+        <div class="bloco maravilha">
+          <img src="../images/logo-ORAR.png" alt="Orar" />
+          <h2>Orar</h2>
+          <p class="descricao-meta">
+            A ONG adota a Missão Integral, que busca viver a fé em Jesus
+            Cristo de forma unificada em todas as áreas da vida. Segundo a
+            Declaração da Rede Miquéias, evangelismo e ação social não são
+            separados, mas interconectados. A missão é integrar o cuidado com
+            o próximo e o testemunho da graça de Cristo, promovendo justiça e
+            transformação espiritual, material e estrutural.A organização
+            acredita que a fé deve impactar todas as dimensões da vida, assim
+            como exemplificado por Jesus.
+          </p>
+          <button>
+            <a href="https://orar.org.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/angelo_picone.jpg" alt="angelo_picone" />
+          <h2>Proteção e Bem Estar Animal - Angelo picone</h2>
+          <p class="descricao-meta">
+            A Associação Angelo Picone é uma organização não governamental e
+            sem fins lucrativos dedicada ao cuidado e proteção dos animais.
+            Com esforços independentes, a ONG trabalha para acolher, tratar e
+            promover o bem-estar dos animais, contando com a colaboração da
+            comunidade para continuar suas atividades filantrópicas.
+          </p>
+          <button>
+            <a href="https://www.facebook.com/AssociacaoAngeloPicone/?locale=pt_BR" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/acaodacidadania.jpg" alt="acao_da_cidadania" />
+          <h2>Ação da Cidadania</h2>
+          <p class="descricao-meta">
+            A Ação da Cidadania, fundada por Herbert de Souza (Betinho) em
+            1993, é um movimento social voltado para combater a fome e a
+            miséria no Brasil. Com uma rede de mobilização nacional formada
+            por comitês locais e lideranças comunitárias, a ONG busca apoiar
+            os 32 milhões de brasileiros em situação de extrema pobreza.
+          </p>
+          <button>
+            <a href="https://www.acaodacidadania.org.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/hospitaldeamor.png" alt="hospital_de_amor" />
+          <h2>Hospital de Amor</h2>
+          <p class="descricao-meta">
+            Com mais de 60 anos de história, o Hospital de Amor é reconhecido
+            internacionalmente pela excelência em tecnologia e cuidado
+            humanizado. Considerado o maior polo de tratamento oncológico
+            gratuito da América Latina, oferece exames preventivos gratuitos,
+            suporte completo a pacientes e familiares, e promove a produção
+            científica por meio do Instituto de Ensino e Pesquisa (IEP).
+          </p>
+          <button>
+            <a href="https://doeamor.hospitaldeamor.com.br/stn/?utm_source=google_gsn_doacao_st&gad_source=1&gclid=EAIaIQobChMI6bvDh8fuiQMViCFECB2sWgpUEAAYASAAEgJXBPD_BwE"
+              target="_blank">Site</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="bloco maravilha">
+          <img src="../images/viver.jpg" alt="viver" />
+          <h2>Viver</h2>
+          <p class="descricao-meta">
+            A Organização Viver foi fundada em 2001 por quatro voluntários e,
+            há mais de 23 anos, oferece apoio social e bem-estar a crianças e
+            adolescentes com câncer. A instituição surgiu a partir da
+            identificação de necessidades além da recreação, proporcionando um
+            espaço dedicado para acolher e oferecer suporte às crianças e suas
+            famílias durante o tratamento.
+          </p>
+          <button>
+            <a href="https://www.ongviver.org.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/sosvidaanimal.png" alt="SOS" />
+          <h2>SOS Vida Animal</h2>
+          <p class="descricao-meta">
+            A SOS Vida Animal, fundada em 1989, atua em Londrina e região com
+            o apoio de voluntários dedicados à causa animal. A organização não
+            acolhe animais, mas promove o bem-estar de cães e gatos por meio
+            de eventos de adoção e campanhas de conscientização.
+          </p>
+          <button>
+            <a href="http://www.sosvidaanimal.org.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/arte_e_vida.png" alt="Taj Mahal" />
+          <h2>Centro de Convivência Arte & Vida</h2>
+          <p class="descricao-meta">
+            O Centro de Convivência Arte & Vida é uma organização sem fins
+            lucrativos que promove inclusão social por meio de atividades
+            culturais, esportivas e complementares à educação, oferecendo um
+            espaço para convivência, desenvolvimento de protagonismo e
+            autonomia, respeitando as faixas etárias dos beneficiários.
+          </p>
+          <button>
+            <a href="https://www.google.com/maps/place/Taj+Mahal/@27.175147,78.042128,17z/data=!3m1!1e3!4m5!3m4!1s0x396db959ecd4139b:0x37c3723e893e8742!8m2!3d27.175147!4d78.042128"
+              target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/instituto_sedas.png" alt="intituto_das_sedas" />
+          <h2>Instituto das Sedas</h2>
+          <p class="descricao-meta">
+            O Instituto Sendas é uma ONG composta por migrantes de diversos
+            países e brasileiros residentes em Maringá, Sarandi e Marialva
+            (PR). Seu foco é empoderar migrantes e refugiados, aproveitando
+            seus talentos e experiências para promover a integração e melhorar
+            suas condições de vida no Brasil.
+          </p>
+          <button>
+            <a href="https://sendas.transforme.tech/" target="_blank">Site</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="bloco maravilha">
+          <img src="../images/ONG_VIVER_COPEL.jpg" alt="ongviver" />
+          <h2>ONG Viver</h2>
+          <p class="descricao-meta">
+            A ONG Viver é uma instituição voluntária, fundada em 1997, que
+            apoia as crianças com câncer e suas famílias em busca de
+            tratamento contra a doença em Londrina. Atualmente atendem 151
+            crianças e adolescentes.
+          </p>
+          <button>
+            <a href="https://eletricidadania.v2v.net/pt-BR/aggregators/76d21968-7459-48b0-bc9c-c988c6fd09af"
+              target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/refugio_ong.png" alt="refúgio" />
+          <h2>Refúgio</h2>
+          <p class="descricao-meta">
+            A Associação Refúgio, fundada em 2000 em Cambé-PR, promove a
+            proteção e desenvolvimento de crianças e adolescentes em situação
+            de vulnerabilidade social por meio de oficinas culturais,
+            esportivas e socioeducativas. Com sede própria e profissionais
+            qualificados, atua na prevenção de violência e riscos sociais,
+            impactando a região norte de Cambé e sua comunidade.
+          </p>
+          <button>
+            <a href="http://www.sosvidaanimal.org.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/logo-virapet.png" alt="vira_pet" />
+          <h2>Vira Pet</h2>
+          <p class="descricao-meta">
+            O projeto Vira Pet, ativo desde 2016 em Maringá-PR, resgata cães e
+            gatos abandonados, oferecendo cuidados veterinários, castração e
+            preparo para adoção responsável. Atuando com voluntários, promove
+            transparência, respeito e tratamento digno aos animais, buscando
+            lares seguros para eles.
+          </p>
+          <button>
+            <a href="https://virapet.ong.br/" target="_blank">Site</a>
+          </button>
+        </div>
+
+        <div class="bloco maravilha">
+          <img src="../images/socpam.jpg" alt="socpam" />
+          <h2>SOCPAM</h2>
+          <p class="descricao-meta">
+            A SOCPAM é uma ONG que resgata, cuida e promove a adoção
+            responsável de cães, oferecendo abrigo e atendimento veterinário.
+            Nosso objetivo é encontrar lares amorosos para os animais e
+            conscientizar sobre a importância da adoção responsável.
+          </p>
+          <button>
+            <a href="https://www.facebook.com/socpam.maringa?locale=pt_BR" target="_blank">Site</a>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2024 - ODS Search - Todos os direitos reservados</p>
+    <p>Entre em contato pelo e-mail: odssearch.utfpr.edu.br</p>
+    <p>
+      Confira o
+      <a href="https://alllanvfs.github.io/curriculo_frontend_2/" target="_blank"
+        style="color: #000000; text-decoration: underline; font-weight: bold">Currículo Allan</a>
+    </p>
+
+    <p>
+      Confira o
+      <a href="https://devfabiomats.github.io/projeto-curriculo-utfpr/" target="_blank"
+        style="color: #000000; text-decoration: underline; font-weight: bold">Currículo Fabio</a>
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
