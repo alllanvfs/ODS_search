@@ -35,10 +35,9 @@
 
 - A estrutura do projeto é organizada de forma modular, utilizando as melhores práticas de desenvolvimento web. O código está dividido em várias camadas que facilitam a manutenção e escalabilidade da aplicação.
 
-- **/fig/**: Contém imagens, ícones e outros arquivos de mídia utilizados na interface do usuário.
 - **/src/**: Contém o código fonte da aplicação:
-  - **/index/**: Contém a parte HTML, responsável pela estrutura da aplicação.
+  - **/images/**: Contém imagens, ícones e outros arquivos de mídia utilizados na interface do usuário.
+  - **/pages/**: Contém a parte HTML, responsável pela estrutura da aplicação.
   - **/styles/**: Contém os arquivos CSS que definem a estilização e o layout do projeto.
-  - **/javascript/**: Contém os arquivos JavaScript responsáveis pela interatividade da aplicação.
-- **/docs/**: Contém a documentação adicional, como diagramas e especificações técnicas do projeto.
-  - **README.md**: Este arquivo, que descreve o projeto, suas funcionalidades e a estrutura do código.
+  - **/scripts/**: Contém os arquivos JavaScript responsáveis pela interatividade da aplicação.
+- **README.md**: Este arquivo, que descreve o projeto, suas funcionalidades e a estrutura do código.
