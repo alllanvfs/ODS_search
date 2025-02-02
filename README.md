@@ -1,6 +1,6 @@
 # 🔍 ODS Search 🔍
 
-<H2> <kbd>🚧 EM DESENVOLVIMENTO 🚧</kbd><br><br>
+<H2> <kbd>✅ FINALIZADO ✅</kbd><br><br>
 
 <table>
   <tr>
