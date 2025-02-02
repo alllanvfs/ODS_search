@@ -1,59 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-body {
-  font-family: "Chakra Petch", sans-serif;
-  background-color: #dddddd;
-  background-image: url("../images/fundo_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+#botao-admin {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
 }
 
-header {
-  display: flex;
-  margin: 0;
-  background-image: linear-gradient(to right, #065a6f75, #076f347d);
-  padding: 1rem;
-  width: 100%;
-  margin-bottom: 50px;
+#botao-admin:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
 }
 
-.titulo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 87%;
+#botao-admin:active {
+  background-color: #229954;
 }
 
-header>img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  border: 1px solid #222831;
-  margin-left: 1rem;
-}
-
-
-.titulo>h1 {
-  font-size: 5rem;
-  font-weight: bold;
-  color: #222831;
-  text-align: center;
-  letter-spacing: 0.4rem;
-  margin: 0;
-}
-
-.titulo>p {
-  font-size: 1.5rem;
-  color: #222831;
-  text-align: center;
-  margin: 0;
+#botao-admin:focus {
+  background-color: #27ae60;
+  transform: translateY(0);
 }
 
 /* Estiliza as seções da página */
@@ -139,16 +110,6 @@ section button:hover {
   color: #45474b;
   margin: 0.5rem 0;
   text-align: justify;
-}
-
-footer {
-  background-color: #f5f7f8;
-  color: #45474b;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-  bottom: 0;
-  margin-top: 60vh;
 }
 
 @media (max-width: 768px) {
