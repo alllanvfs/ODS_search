@@ -5,7 +5,7 @@
 <table>
   <tr>
     <td>
-      <img src="../images/logo.png" alt="Logo do ODS Search" width="250rem">
+      <img src="./src/images/ods-search-logo.png" alt="Logo do ODS Search" width="250rem">
     </td>
     <td>
       - ✔️ Projeto da disciplina de Programação Web Front-end <br><br>
