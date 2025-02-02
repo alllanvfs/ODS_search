@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/global.css" />
   <link rel="stylesheet" href="../styles/home.css" />
   <title>ODS Search</title>
 </head>
@@ -17,22 +18,8 @@
     </div>
   </header>
 
-  <button style="
-        background-color: #2ecc71;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 10px 0;
-      " onmouseover="this.style.backgroundColor='#27ae60'; this.style.transform='translateY(-2px)';"
-    onmouseout="this.style.backgroundColor='#2ecc71'; this.style.transform='translateY(0)';"
-    onmousedown="this.style.backgroundColor='#229954';" onmouseup="this.style.backgroundColor='#27ae60';"
-    onclick="window.location.href='cadastro.html'">
-    Cadastro
+  <button id="botao-admin" onclick="window.location.href='admin.html'">
+    Admin
   </button>
 
   <main>
@@ -237,7 +224,7 @@
   </main>
 
   <footer>
-    <p>2024 - ODS Search - Todos os direitos reservados</p>
+    <p>2025 - ODS Search - Todos os direitos reservados</p>
     <p>Entre em contato pelo e-mail: odssearch.utfpr.edu.br</p>
     <p>
       Confira o
@@ -251,6 +238,7 @@
         style="color: #000000; text-decoration: underline; font-weight: bold">Currículo Fabio</a>
     </p>
   </footer>
+
   <script src="../scripts/script.js"></script>
 </body>
 
