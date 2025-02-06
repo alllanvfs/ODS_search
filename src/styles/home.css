@@ -166,10 +166,11 @@ section button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 10px; /* Adiciona padding para garantir espaço nas bordas */
 }
 
 .bloco {
-  width: 20vw;
+  width: calc(20vw - 40px); /* Ajusta a largura para caber na tela com margem */
   height: 65vh;
   background-color: #ffffff;
   border-radius: 10px;
@@ -177,26 +178,53 @@ section button:hover {
   padding: 20px;
   text-align: center;
   margin: 20px;
-  overflow: hidden;
+  overflow: hidden; /* Esconde o conteúdo que vaza */
   display: flex;
   flex-direction: column;
 }
 
-.bloco.ong .descricao-meta {
-  flex-grow: 1;
-  overflow-y: auto;
+.bloco img {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Define uma altura máxima para as imagens */
+  object-fit: contain; /* Ajusta a imagem dentro da caixa */
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 10px;
+}
+
+.bloco h2 {
+  font-size: 1.5rem;
   margin: 10px 0;
 }
 
-.bloco .blocos:nth-child(n + 5) {
-  width: calc(33.333% - 20px);
+.bloco .descricao-meta {
+  flex-grow: 1;
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  margin: 10px 0;
+  text-align: justify;
 }
 
-.bloco img {
-  width: 20vw;
-  height: 30vh;
-  border-radius: 10px 0 0 10px;
-  margin-bottom: 10px;
+.bloco button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.bloco button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bloco button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
 }
 
 /* Classe para centralizar o item selecionado */
