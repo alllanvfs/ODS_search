@@ -26,7 +26,6 @@
   transform: translateY(0);
 }
 
-/* Estiliza as seções da página */
 section {
   display: flex;
   flex-direction: column;
@@ -34,7 +33,6 @@ section {
   margin-bottom: 3rem;
 }
 
-/* Estiliza os inputs dentro das seções */
 section input {
   width: 30rem;
   border: none;
@@ -46,7 +44,6 @@ section input {
   box-sizing: border-box;
 }
 
-/* Estiliza os botões dentro das seções */
 section button {
   padding: 0.8rem 1.2rem;
   border: none;
@@ -57,7 +54,6 @@ section button {
   cursor: pointer;
 }
 
-/* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
   background-color: #30475e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -69,7 +65,6 @@ section button:hover {
   align-items: center;
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
   width: 60rem;
   height: 46vh;
@@ -79,7 +74,6 @@ section button:hover {
   border-radius: 0.6rem;
 }
 
-/* Estiliza cada item de resultado */
 .item-resultado {
   background: #ffffff;
   border-radius: 0.6rem;
@@ -88,13 +82,11 @@ section button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
 .bloco h2 {
   font-size: 1.5rem;
   color: #222831;
 }
 
-/* Estiliza os links dentro dos itens de resultado */
 .bloco a {
   text-decoration: none;
   color: #ffffff;
@@ -104,7 +96,6 @@ section button:hover {
   text-decoration: underline;
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
   color: #45474b;
   margin: 0.5rem 0;
@@ -132,7 +123,6 @@ section button:hover {
   }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
@@ -166,11 +156,11 @@ section button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px; /* Adiciona padding para garantir espaço nas bordas */
+  padding: 10px; 
 }
 
 .bloco {
-  width: calc(20vw - 40px); /* Ajusta a largura para caber na tela com margem */
+  width: calc(20vw - 40px);
   height: 65vh;
   background-color: #ffffff;
   border-radius: 10px;
@@ -178,7 +168,7 @@ section button:hover {
   padding: 20px;
   text-align: center;
   margin: 20px;
-  overflow: hidden; /* Esconde o conteúdo que vaza */
+  overflow: hidden; 
   display: flex;
   flex-direction: column;
 }
@@ -186,8 +176,8 @@ section button:hover {
 .bloco img {
   width: 100%;
   height: auto;
-  max-height: 150px; /* Define uma altura máxima para as imagens */
-  object-fit: contain; /* Ajusta a imagem dentro da caixa */
+  max-height: 150px; 
+  object-fit: contain; 
   border-radius: 10px 0 0 10px;
   margin-bottom: 10px;
 }
@@ -199,7 +189,7 @@ section button:hover {
 
 .bloco .descricao-meta {
   flex-grow: 1;
-  overflow-y: auto; /* Adiciona rolagem vertical */
+  overflow-y: auto;
   margin: 10px 0;
   text-align: justify;
 }
@@ -227,7 +217,6 @@ section button:hover {
   transform: translateY(-2px);
 }
 
-/* Classe para centralizar o item selecionado */
 .centro {
   display: block;
   margin: 20px;
@@ -235,7 +224,6 @@ section button:hover {
   font-size: 20px;
 }
 
-/* Classe para ocultar elementos */
 .oculto {
   display: none;
 }
