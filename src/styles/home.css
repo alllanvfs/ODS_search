@@ -177,6 +177,15 @@ section button:hover {
   padding: 20px;
   text-align: center;
   margin: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco.ong .descricao-meta {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin: 10px 0;
 }
 
 .bloco .blocos:nth-child(n + 5) {
