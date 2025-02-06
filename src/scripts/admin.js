@@ -1,3 +1,15 @@
+const formCadastro = document.getElementById("formCadastro");
+const btnLimpar = document.getElementById("btnLimpar");
+const btnExcluirTodos = document.getElementById("btnExcluirTodos");
+const inputPesquisa = document.getElementById("pesquisa");
+
+formCadastro.addEventListener("submit", cadastrarUsuario);
+btnLimpar.addEventListener("click", limparCampos);
+btnExcluirTodos.addEventListener("click", excluirTodosUsuarios);
+inputPesquisa.addEventListener("input", pesquisarUsuarios);
+
+carregarUsuarios();
+
 function carregarUsuarios() {
     const listaUsuarios = document.getElementById("listaUsuarios");
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
@@ -11,22 +23,20 @@ function carregarUsuarios() {
     });
 }
 
-function cadastrarUsuario() {
+function cadastrarUsuario(event) {
+    event.preventDefault(); 
+
     const form = document.getElementById("formCadastro");
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const data = new Date().toLocaleString(); 
 
-    if (nome && email) {
-        const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-        usuarios.push({ nome, email, data });
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    usuarios.push({ nome, email, data });
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-        form.reset(); 
-        carregarUsuarios(); 
-    } else {
-        alert("Por favor, preencha todos os campos.");
-    }
+    form.reset();
+    carregarUsuarios(); 
 }
 
 function limparCampos() {
@@ -50,7 +60,7 @@ function pesquisarUsuarios() {
     const inputPesquisa = document.getElementById("pesquisa").value.toLowerCase();
     const listaUsuarios = document.getElementById("listaUsuarios");
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    listaUsuarios.innerHTML = ''; 
+    listaUsuarios.innerHTML = '';
 
     usuarios.forEach((usuario, index) => {
         if (usuario.nome.toLowerCase().includes(inputPesquisa) || usuario.email.toLowerCase().includes(inputPesquisa)) {
@@ -61,17 +71,3 @@ function pesquisarUsuarios() {
         }
     });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const btnCadastrar = document.getElementById("btnCadastrar");
-    const btnLimpar = document.getElementById("btnLimpar");
-    const btnExcluirTodos = document.getElementById("btnExcluirTodos");
-    const inputPesquisa = document.getElementById("pesquisa");
-
-    btnCadastrar.addEventListener("click", cadastrarUsuario);
-    btnLimpar.addEventListener("click", limparCampos);
-    btnExcluirTodos.addEventListener("click", excluirTodosUsuarios);
-    inputPesquisa.addEventListener("input", pesquisarUsuarios);
-
-    carregarUsuarios(); 
-});
